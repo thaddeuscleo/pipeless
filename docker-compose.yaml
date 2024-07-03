@@ -1,11 +1,11 @@
 services:
   pipeless:
-    image: dev.local/pipeless:0.0.1
+    image: registry.sdlc.lacak.io/pipeless-yolo-cpu:0.0.1
     build:
       context: .
       dockerfile: Dockerfile
       tags:
-        - dev.local/pipeless:0.0.1
+        - registry.sdlc.lacak.io/pipeless-yolo-cpu:0.0.1
     entrypoint: pipeless start --stages-dir .
     ports:
       - 3030:3030
